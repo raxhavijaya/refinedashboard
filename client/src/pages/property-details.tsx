@@ -36,17 +36,11 @@ const PropertyDetails = () => {
   const handleDeleteProperty = () => {
     const response = confirm("Are you sure you want to delete this property?");
     if (response) {
-      mutate(
-        {
-          resource: "properties",
-          id: id as string,
-        },
-        {
-          onSuccess: () => {
-            navigate("/properties");
-          },
-        }
-      );
+      mutate({
+        resource: "properties",
+        id: id as string,
+      });
+      navigate("/properties");
     }
   };
 
