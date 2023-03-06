@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useList } from "@pankod/refine-core";
 import { Typography, Box, Stack } from "@pankod/refine-mui";
 import { PieChart, PropertyReferrals, TotalRevenue, PropertyCard, TopAgent } from "components";
